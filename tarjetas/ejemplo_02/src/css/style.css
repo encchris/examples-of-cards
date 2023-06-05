@@ -20,6 +20,122 @@
 
 body
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-card-white);
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--google-fonts);
+}
+
+header,
+h1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1
+{
+    font-size: 2.5rem;
+}
+
+.subtitle
+{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 5em auto;
+    align-items: center;
+    width: 80%;
+}
+
+.card
+{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    padding: 0 2em;
+    font-size: .9rem;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px var(--shadow-dark-blue);
+    background-color: var(--bg-card-white);
+}
+
+.card__title,
+.card__text
+{
+    text-align: left;
+}
+
+.card--cyan
+{
+    border-top: 5px solid var(--cyan);
+}
+
+.card--red
+{
+    border-top: 5px solid var(--red);
+}
+
+.card--orange
+{
+    border-top: 5px solid var(--orange);
+}
+
+.card--blue
+{
+    border-top: 5px solid var(--blue);
+}
+
+.card__icon
+{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    right: 2em;
+    bottom: 2em;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card--top,
+.card--bottom
+{
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.text-light
+{
+    color: var(--text-grey);
+}
+
+.text-thin
+{
+    font-weight: 200;
+}
+
+.text-bold
+{
+    font-weight: 600;
+}
+
+/*
+body
+{
     background-color: var(--bg-card-white);
     text-align: center;
     font-weight: 400;
@@ -37,6 +153,7 @@ body
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .cards
@@ -140,3 +257,5 @@ body
 {
     font-weight: 600;
 }
+
+*/
